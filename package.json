@@ -1,0 +1,17 @@
+{
+  "name": "hpl-cloud-drive",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "HPL的专用云 - 基于 Cloudflare Workers + R2 的轻量级专属云盘",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "keywords": ["cloudflare", "worker", "r2", "cloud-drive"],
+  "author": "HPL",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}

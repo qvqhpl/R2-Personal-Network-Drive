@@ -1,0 +1,12 @@
+name = "hpl-cloud-drive"
+main = "src/index.js"
+compatibility_date = "2024-04-01"
+
+# 绑定 Cloudflare R2 存储桶
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "my-cloud-drive"
+
+[vars]
+# 访问密码配置（默认 admin123456，可通过控制台环境变量自定义修改）
+AUTH_PASSWORD = "admin123456"
