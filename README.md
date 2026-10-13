@@ -21,12 +21,12 @@
 1. 登录 [Cloudflare 控制台](https://dash.cloudflare.com/)，在 **R2** 中新建一个存储桶（如 `my-cloud-drive`）；
 2. 在 **Workers & Pages** 中创建一个新的 Worker；
 3. 进入该 Worker 的 **编辑代码 (Edit code)**，全选清空并粘贴 `index.js` 的完整代码，点击右上角 **部署 (Deploy)**；
-4. 进入该 Worker 的 **设置 (Settings)** -> **变量与机密 (Variables and Secrets)** -> **R2 存储桶绑定**：
+4. 进入该 Worker 的 **设置 (Settings)** -> **绑定** -> **R2 存储桶绑定**：
    - 变量名称：`BUCKET`（大写）；
    - R2 存储桶：选择第一步创建的存储桶；
-5. 访问分配给您的 Worker 网址，输入默认密码 `admin123456` 即可开始使用！
+5. 添加变量：AUTH_PASSWORD，值：（你的自定义密码）如未添加，默认密码为 `admin123456` ；
 
 ---
 
 ## 📄 开源许可证
-MIT License
+hpl
